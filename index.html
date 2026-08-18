@@ -1,37 +1,91 @@
-<!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="2026년 상반기 행정안전부 안전점검 결과보고서">
-  <title>2026 안전점검 결과보고서</title>
-  <style>
-    :root{--navy:#12345b;--blue:#1769aa;--sky:#eaf4fb;--ink:#172333;--muted:#647487;--line:#d9e2eb;--paper:#fff;--bg:#f3f6f9;--green:#17835b;--amber:#a96400;--red:#b43b3b}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR","Malgun Gothic",Arial,sans-serif;line-height:1.72}
-    a{color:inherit}.topbar{position:sticky;top:0;z-index:10;background:rgba(18,52,91,.96);color:#fff;box-shadow:0 2px 12px #12345b22}.topbar-inner{max-width:1180px;margin:auto;padding:11px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font-weight:800;letter-spacing:-.02em}.tools{display:flex;gap:8px}.btn{border:1px solid #ffffff55;background:#ffffff10;color:#fff;border-radius:8px;padding:8px 12px;cursor:pointer;font:inherit}.btn:hover{background:#ffffff20}
-    .hero{background:linear-gradient(125deg,#102f54,#1769aa);color:#fff}.hero-inner{max-width:1180px;margin:auto;padding:70px 24px 66px}.eyebrow{font-size:.85rem;letter-spacing:.12em;font-weight:800;opacity:.78}.hero h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.14;margin:14px 0 18px;letter-spacing:-.05em}.hero p{max-width:710px;font-size:1.08rem;color:#e7f2fb}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.meta span{border:1px solid #ffffff45;background:#ffffff12;border-radius:999px;padding:6px 12px;font-size:.88rem}
-    .layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:230px 1fr;gap:28px;padding:32px 24px 70px}.toc{position:sticky;top:78px;align-self:start;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px}.toc strong{display:block;margin-bottom:10px;color:var(--navy)}.toc a{display:block;text-decoration:none;color:var(--muted);padding:7px 4px;border-bottom:1px solid #edf1f5;font-size:.92rem}.toc a:hover{color:var(--blue)}main{min-width:0}.section{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:clamp(22px,4vw,42px);margin-bottom:24px;box-shadow:0 8px 28px #233a5310;scroll-margin-top:80px}.section h2{margin:0 0 22px;color:var(--navy);font-size:1.55rem;letter-spacing:-.03em}.section h3{color:var(--blue);margin-top:30px}.lead{font-size:1.08rem;color:#34465a}
-    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:26px 0}.kpi{background:linear-gradient(145deg,#f8fbfe,#edf5fb);border:1px solid #d5e5f1;border-radius:13px;padding:20px}.kpi b{display:block;color:var(--navy);font-size:1.8rem;line-height:1.2}.kpi span{font-size:.88rem;color:var(--muted)}
-    table{width:100%;border-collapse:collapse;margin:18px 0;font-size:.94rem}th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--sky);color:var(--navy)}tbody tr:hover{background:#f9fbfd}.note{border-left:4px solid var(--blue);background:var(--sky);padding:15px 18px;border-radius:0 10px 10px 0;margin:20px 0}.warning{border-left-color:var(--amber);background:#fff7e7}.ok{color:var(--green);font-weight:700}.tag{display:inline-block;border-radius:999px;background:#e8f1fa;color:var(--blue);padding:2px 9px;font-size:.8rem;font-weight:700}.steps{counter-reset:item;display:grid;gap:12px}.step{display:grid;grid-template-columns:38px 1fr;gap:13px;align-items:start}.step:before{counter-increment:item;content:counter(item);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800}.step b{display:block;color:var(--navy)}footer{text-align:center;color:var(--muted);padding:10px 24px 50px;font-size:.85rem}
-    @media(max-width:850px){.layout{display:block}.toc{position:static;margin-bottom:24px}.kpis{grid-template-columns:repeat(2,1fr)}.hero-inner{padding-top:48px}.topbar-inner{padding:10px 16px}.brand{font-size:.9rem}}
-    @media(max-width:520px){.kpis{grid-template-columns:1fr}.section{border-radius:0;margin-left:-24px;margin-right:-24px}.tools .btn:first-child{display:none}table{display:block;overflow-x:auto;white-space:nowrap}}
-    @media print{.topbar,.toc,.no-print{display:none!important}body{background:#fff}.hero{background:#fff!important;color:#111;border-bottom:3px solid #12345b}.hero p,.eyebrow{color:#333}.layout{display:block;max-width:none;padding:16px}.section{box-shadow:none;break-inside:avoid;border-color:#bbb}.meta span{border-color:#777}.kpi{background:#fff}a{text-decoration:none}}
-  </style>
-</head>
-<body>
-  <header class="topbar"><div class="topbar-inner"><div class="brand">행정안전부 · 안전점검 결과보고</div><div class="tools"><button class="btn" onclick="document.getElementById('overview').scrollIntoView()">본문 보기</button><button class="btn" onclick="window.print()">인쇄 / PDF</button></div></div></header>
-  <section class="hero"><div class="hero-inner"><div class="eyebrow">2026 FIRST HALF · SAFETY INSPECTION</div><h1>2026년 상반기<br>안전점검 결과보고서</h1><p>종합 안전점검 추진 실적과 시정조치 현황, 예산 운용 및 하반기 추진계획을 한눈에 확인할 수 있도록 재구성한 웹 보고서입니다.</p><div class="meta"><span>기준기간 2026. 1.–6.</span><span>주관 안전정책총괄과</span><span>총괄책임 권혁수 과장</span><span>검토본</span></div></div></section>
-  <div class="layout">
-    <nav class="toc" aria-label="문서 목차"><strong>목차</strong><a href="#overview">1. 개요</a><a href="#results">2. 분야별 결과</a><a href="#budget">3. 예산 운용</a><a href="#plan">4. 향후 계획</a><a href="#references">5. 참고자료 핵심수치</a><a href="#editorial">6. 정합성 검토</a></nav>
-    <main>
-      <section class="section" id="overview"><h2>1. 개요</h2><p class="lead">행정안전부 안전정책총괄과는 2026년 상반기 시설안전·교통안전·재난안전·산업안전 4개 분야를 대상으로 종합 안전점검을 실시했습니다.</p><div class="kpis"><div class="kpi"><b>450건</b><span>상반기 점검 완료</span></div><div class="kpi"><b>120건</b><span>지적사항</span></div><div class="kpi"><b>85%</b><span>누적 시정 완료율</span></div><div class="kpi"><b>92%</b><span>상반기 예산 집행률</span></div></div><div class="note"><strong>정리 기준</strong><br>원문 내 상충 값은 개요의 총괄 수치를 기준으로 통일했습니다. 최종 확정 전 분야별 집계표와 예산 결산자료, 인사자료 대조가 필요합니다.</div></section>
-      <section class="section" id="results"><h2>2. 분야별 점검 결과</h2><table><thead><tr><th>구분</th><th>점검 내용</th><th>관리 방향</th></tr></thead><tbody><tr><td><span class="tag">시설안전</span></td><td>공공건축물·도로·교량 등 주요 시설물의 물리적·기능적 상태 확인</td><td>노후·취약 시설 정밀점검 우선</td></tr><tr><td><span class="tag">교통안전</span></td><td>도로 및 해상교통 관련 안전관리 상태 확인</td><td>점검 주기와 항목의 표준화</td></tr><tr><td><span class="tag">재난안전</span></td><td>재난 대응체계와 시민 신고·현장 대응 절차 확인</td><td>시민 참여 신고체계 확대</td></tr><tr><td><span class="tag">산업안전</span></td><td>산업단지와 위험요인 관리 실태 확인</td><td>관계부처 합동점검 강화</td></tr></tbody></table><p>4개 분야의 상반기 점검 실적은 총 <strong>450건</strong>입니다. 지적사항은 <strong>120건</strong>, 누적 시정 완료율은 <strong>85%</strong>로 정리했습니다. 지적사항 중 80% 이상이 1분기 안에 시정된 것으로 보고되었습니다.</p><div class="note warning">시정 완료율 85%를 120건에 적용하면 완료 건수는 102건입니다. 최종 보고 시에는 반올림 여부와 실제 완료 건수를 함께 명시하는 것이 좋습니다.</div></section>
-      <section class="section" id="budget"><h2>3. 예산 운용</h2><p>상반기 예산 집행률은 총괄 수치인 <strong>92%</strong>로 통일했습니다. 총괄 운영은 권혁수 안전정책총괄과장이 주재했으며, 상반기 동안 정기·수시 점검회의를 총 5회 개최했습니다.</p><table><thead><tr><th>항목</th><th>2025년 참고값</th><th>2026년 상반기</th><th>비고</th></tr></thead><tbody><tr><td>예산 집행률</td><td>89.3%</td><td><strong>92%</strong></td><td>연간 결산과 상반기 실적은 직접 비교에 유의</td></tr><tr><td>운영 회의</td><td>—</td><td>5회</td><td>정기·수시 회의 합계로 표현 정비</td></tr></tbody></table></section>
-      <section class="section" id="plan"><h2>4. 향후 계획</h2><div class="steps"><div class="step"><div><b>하반기 추가 점검 440건</b>상반기 실적과 별개의 하반기 목표로 추진합니다.</div></div><div class="step"><div><b>취약 지자체 집중 컨설팅</b>상반기 시정 완료율이 82% 수준에 머문 일부 지자체를 대상으로 개선을 지원합니다.</div></div><div class="step"><div><b>보고 양식 표준화</b>시설명·소재지·점검일·점검자, 안전등급, 지적사항·시정조치, 사진·도면 형식을 통일합니다.</div></div><div class="step"><div><b>시민 신고체계 확대</b>모바일 안전 신고 시스템을 2026년 9월부터 전국으로 확대합니다.</div></div></div></section>
-      <section class="section" id="references"><h2>5. 참고자료 핵심수치</h2><table><thead><tr><th>자료</th><th>핵심수치</th><th>활용상 유의점</th></tr></thead><tbody><tr><td>2025 안전점검 백서</td><td>점검시설 412곳, 지적사항 1,260건, 시정완료 87.6%, 예산집행 89.3%</td><td>2025년 연간 결산 기준</td></tr><tr><td>시설물안전관리법 발췌</td><td>안전등급 S·A·B·C·D·E 6단계, 정밀점검 3–6년 주기</td><td>D·E등급은 보수·보강 또는 사용제한 가능</td></tr><tr><td>시도별 우수사례집</td><td>10개 시도, 사업비 약 930억 원, 직접효과 14–38% 개선</td><td>개별 시도 사례로 본문 실적과 직접 합산하지 않음</td></tr><tr><td>평가위원회 회의록</td><td>노후시설 정밀점검 대상 84곳, 전년 동기 대비 점검시설 12% 증가</td><td>2026년 1–5월 중간보고 기준</td></tr><tr><td>해외 체계 비교</td><td>한국 6단계, 미국·일본·영국·독일 각 4단계</td><td>2024–2025년 국가별 제도 비교</td></tr></tbody></table></section>
-      <section class="section" id="editorial"><h2>6. 정합성 검토 및 수정 내역</h2><table><thead><tr><th>사실</th><th>원문 상충 값</th><th>웹 보고서 적용값</th><th>처리 근거</th></tr></thead><tbody><tr><td>지적사항 수</td><td>120건 / 115건</td><td><strong>120건</strong></td><td>개요의 총괄값 우선 적용</td></tr><tr><td>예산 집행률</td><td>92% / 90%</td><td><strong>92%</strong></td><td>개요의 총괄값 우선 적용</td></tr><tr><td>총괄책임자</td><td>권혁수 / 권혁주</td><td><strong>권혁수</strong></td><td>본문 3개 기재 중 2개가 일치</td></tr></tbody></table><div class="note warning"><strong>중요</strong><br>참고자료에는 위 세 항목의 최종값을 직접 확정할 원자료가 없습니다. 공식 배포 전 분야별 집계표·재정 집행자료·결재선으로 재확인해야 합니다.</div><p class="ok">✓ 총 점검 450건은 개요·분야별 결과·결론에서 일치합니다.</p><p class="ok">✓ 전체 누적 시정률 85%와 일부 지자체 82%는 대상 범위가 달라 상충 값이 아닙니다.</p><p class="ok">✓ 상반기 450건과 하반기 목표 440건은 기간과 성격이 달라 상충 값이 아닙니다.</p></section>
-    </main>
-  </div>
-  <footer>2026년 상반기 안전점검 결과보고서 · 참고자료 기반 정합성 검토본</footer>
-</body>
-</html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>행정정보 통합관리 및 공동활용 조항</title><meta name="description" content="행정정보 통합관리 및 공동활용 관련 법령 조항 카드">
+<style>
+:root{--navy:#17365d;--blue:#2e6da4;--pale:#eef5fb;--ink:#172033;--muted:#65758b;--line:#dce5ef;--bg:#f5f7fa}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.7}
+header{background:linear-gradient(135deg,#102d50,#27679d);color:#fff;padding:54px 24px 82px}.head{max-width:1120px;margin:auto}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.14em;color:#b9daf5}h1{margin:9px 0 10px;font-size:clamp(30px,5vw,48px);line-height:1.18;letter-spacing:-.05em}.sub{margin:0;color:#dbeafa}
+main{max-width:1120px;margin:-42px auto 70px;padding:0 24px}.toolbar{position:sticky;top:12px;z-index:5;display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 24px #17365d16;border-radius:16px;padding:14px 16px;margin-bottom:24px}
+.search{flex:1;border:0;outline:0;font-size:16px;padding:10px 12px;color:var(--ink)}.count{white-space:nowrap;font-size:14px;color:var(--muted);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px 26px;box-shadow:0 5px 18px #17365d0a;transition:.18s ease}.card:hover{transform:translateY(-2px);box-shadow:0 11px 25px #17365d15;border-color:#b8cde0}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.num{display:inline-flex;background:var(--navy);color:#fff;border-radius:8px;padding:5px 10px;font-size:13px;font-weight:800}.chapter{font-size:12px;color:var(--blue);font-weight:700;text-align:right}
+h2{margin:16px 0 11px;color:var(--navy);font-size:22px;letter-spacing:-.035em}.body{font-size:15px;color:#344257}.body p{margin:0 0 8px;white-space:pre-wrap}.body p:last-child{margin-bottom:0}.empty{display:none;text-align:center;padding:50px;color:var(--muted)}
+footer{max-width:1120px;margin:auto;padding:0 24px 35px;color:var(--muted);font-size:13px;text-align:center}
+@media(max-width:760px){header{padding:38px 20px 68px}main{padding:0 12px}.grid{grid-template-columns:1fr}.toolbar{top:8px}.card{padding:21px 20px}.chapter{max-width:55%}}
+@media print{header{padding:20px;background:#fff;color:#000}.sub,.toolbar{display:none}main{margin:0;padding:0}.grid{display:block}.card{break-inside:avoid;box-shadow:none;margin:0 0 12px}footer{display:none}}
+</style></head><body><header><div class="head"><div class="eyebrow">LAW &amp; POLICY</div><h1>행정정보 통합관리 및 공동활용 조항</h1><p class="sub">총 15개 조항을 장별 카드로 정리했습니다.</p></div></header>
+<main><div class="toolbar"><span aria-hidden="true">🔎</span><input id="q" class="search" type="search" placeholder="조항 번호, 제목 또는 본문 검색" aria-label="조항 검색"><span id="count" class="count">15개 조항</span></div><section id="grid" class="grid"><article class="card" data-search="제1조 목적 이 법은 행정정보의 통합관리와 공동활용에 관한 기본적인 사항을 정함으로써 행정의 효율성과 국민의 편익 증진에 이바지함을 목적으로 한다. 제1장 총칙">
+    <div class="card-top"><span class="num">제1조</span><span class="chapter">제1장 총칙</span></div>
+    <h2>목적</h2><div class="body"><p>이 법은 행정정보의 통합관리와 공동활용에 관한 기본적인 사항을 정함으로써 행정의 효율성과 국민의 편익 증진에 이바지함을 목적으로 한다.</p></div>
+  </article>
+<article class="card" data-search="제2조 정의 이 법에서 사용하는 용어의 뜻은 다음 각 호와 같다.
+1. &quot;행정정보&quot;란 「전자정부법」 제2조제6호에 따른 행정정보를 말한다.
+2. &quot;공동활용&quot;이란 행정기관 간 행정정보를 상호 제공하여 사용하는 것을 말한다.
+3. &quot;통합관리&quot;란 「공공기록물 관리에 관한 법률」 제3조에 따른 기록물의 일부로 행정정보를 통합 관리하는 것을 말한다.
+4. &quot;데이터 표준&quot;이란 행정정보의 공동활용을 위한 형식·코드·식별자에 관한 표준을 말한다. 제1장 총칙">
+    <div class="card-top"><span class="num">제2조</span><span class="chapter">제1장 총칙</span></div>
+    <h2>정의</h2><div class="body"><p>이 법에서 사용하는 용어의 뜻은 다음 각 호와 같다.</p><p>1. &quot;행정정보&quot;란 「전자정부법」 제2조제6호에 따른 행정정보를 말한다.</p><p>2. &quot;공동활용&quot;이란 행정기관 간 행정정보를 상호 제공하여 사용하는 것을 말한다.</p><p>3. &quot;통합관리&quot;란 「공공기록물 관리에 관한 법률」 제3조에 따른 기록물의 일부로 행정정보를 통합 관리하는 것을 말한다.</p><p>4. &quot;데이터 표준&quot;이란 행정정보의 공동활용을 위한 형식·코드·식별자에 관한 표준을 말한다.</p></div>
+  </article>
+<article class="card" data-search="제3조 다른 법률과의 관계 행정정보의 통합관리 및 공동활용에 관하여 다른 법률에 특별한 규정이 있는 경우를 제외하고는 이 법에서 정하는 바에 따른다. 특히 「개인정보 보호법」, 「공공데이터의 제공 및 이용 활성화에 관한 법률」, 「지능정보화 기본법」에 따른 사항은 해당 법률을 우선 적용한다. 제1장 총칙">
+    <div class="card-top"><span class="num">제3조</span><span class="chapter">제1장 총칙</span></div>
+    <h2>다른 법률과의 관계</h2><div class="body"><p>행정정보의 통합관리 및 공동활용에 관하여 다른 법률에 특별한 규정이 있는 경우를 제외하고는 이 법에서 정하는 바에 따른다. 특히 「개인정보 보호법」, 「공공데이터의 제공 및 이용 활성화에 관한 법률」, 「지능정보화 기본법」에 따른 사항은 해당 법률을 우선 적용한다.</p></div>
+  </article>
+<article class="card" data-search="제4조 국가 등의 책무 국가와 지방자치단체는 행정정보의 통합관리와 공동활용을 위하여 필요한 시책을 수립하여야 한다. 행정안전부장관은 그 시책을 종합적으로 조정하며, 자세한 사항은 대통령령으로 정한다. 제1장 총칙">
+    <div class="card-top"><span class="num">제4조</span><span class="chapter">제1장 총칙</span></div>
+    <h2>국가 등의 책무</h2><div class="body"><p>국가와 지방자치단체는 행정정보의 통합관리와 공동활용을 위하여 필요한 시책을 수립하여야 한다. 행정안전부장관은 그 시책을 종합적으로 조정하며, 자세한 사항은 대통령령으로 정한다.</p></div>
+  </article>
+<article class="card" data-search="제5조 기본계획의 수립 ① 행정안전부장관은 행정정보 통합관리 기본계획을 5년마다 수립하여야 한다.
+② 기본계획에는 다음 각 호의 사항을 포함하여야 한다.
+1. 행정정보 통합관리의 기본방향
+2. 행정정보 공동활용의 활성화 방안
+3. 「전자정부법」 제3조의 행정기관 정보화 시책과의 연계
+4. 그 밖에 대통령령으로 정하는 사항 제2장 기본계획 및 추진체계">
+    <div class="card-top"><span class="num">제5조</span><span class="chapter">제2장 기본계획 및 추진체계</span></div>
+    <h2>기본계획의 수립</h2><div class="body"><p>① 행정안전부장관은 행정정보 통합관리 기본계획을 5년마다 수립하여야 한다.</p><p>② 기본계획에는 다음 각 호의 사항을 포함하여야 한다.</p><p>1. 행정정보 통합관리의 기본방향</p><p>2. 행정정보 공동활용의 활성화 방안</p><p>3. 「전자정부법」 제3조의 행정기관 정보화 시책과의 연계</p><p>4. 그 밖에 대통령령으로 정하는 사항</p></div>
+  </article>
+<article class="card" data-search="제6조 시행계획의 수립 행정기관의 장은 매년 시행계획을 수립하여야 하며, 그 결과를 행정안전부장관에게 보고하여야 한다. 시행계획의 형식과 절차는 대통령령으로 정한다. 제2장 기본계획 및 추진체계">
+    <div class="card-top"><span class="num">제6조</span><span class="chapter">제2장 기본계획 및 추진체계</span></div>
+    <h2>시행계획의 수립</h2><div class="body"><p>행정기관의 장은 매년 시행계획을 수립하여야 하며, 그 결과를 행정안전부장관에게 보고하여야 한다. 시행계획의 형식과 절차는 대통령령으로 정한다.</p></div>
+  </article>
+<article class="card" data-search="제7조 공동활용 협의회 행정정보 공동활용에 관한 사항을 협의하기 위하여 행정안전부에 행정정보 공동활용 협의회를 둔다. 협의회의 구성과 운영에 필요한 사항은 대통령령으로 정한다. 제2장 기본계획 및 추진체계">
+    <div class="card-top"><span class="num">제7조</span><span class="chapter">제2장 기본계획 및 추진체계</span></div>
+    <h2>공동활용 협의회</h2><div class="body"><p>행정정보 공동활용에 관한 사항을 협의하기 위하여 행정안전부에 행정정보 공동활용 협의회를 둔다. 협의회의 구성과 운영에 필요한 사항은 대통령령으로 정한다.</p></div>
+  </article>
+<article class="card" data-search="제8조 공동활용 신청 행정기관의 장은 다른 행정기관이 보유한 행정정보를 활용하려는 경우에는 행정안전부장관에게 신청하여야 한다. 제3장 공동활용">
+    <div class="card-top"><span class="num">제8조</span><span class="chapter">제3장 공동활용</span></div>
+    <h2>공동활용 신청</h2><div class="body"><p>행정기관의 장은 다른 행정기관이 보유한 행정정보를 활용하려는 경우에는 행정안전부장관에게 신청하여야 한다.</p></div>
+  </article>
+<article class="card" data-search="제9조 공동활용 승인 행정안전부장관은 신청을 받은 경우 「개인정보 보호법」 제17조에 따른 절차를 거쳐 30일 이내에 승인 여부를 결정하여야 한다. 제3장 공동활용">
+    <div class="card-top"><span class="num">제9조</span><span class="chapter">제3장 공동활용</span></div>
+    <h2>공동활용 승인</h2><div class="body"><p>행정안전부장관은 신청을 받은 경우 「개인정보 보호법」 제17조에 따른 절차를 거쳐 30일 이내에 승인 여부를 결정하여야 한다.</p></div>
+  </article>
+<article class="card" data-search="제10조 보안 조치 공동활용 시 행정정보의 안전성 확보를 위하여 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 및 「개인정보 보호법」에서 정하는 보안 조치를 적용하여야 한다. 제3장 공동활용">
+    <div class="card-top"><span class="num">제10조</span><span class="chapter">제3장 공동활용</span></div>
+    <h2>보안 조치</h2><div class="body"><p>공동활용 시 행정정보의 안전성 확보를 위하여 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 및 「개인정보 보호법」에서 정하는 보안 조치를 적용하여야 한다.</p></div>
+  </article>
+<article class="card" data-search="제11조 데이터 표준 행정안전부장관은 데이터 표준을 정하여 고시할 수 있다. 데이터 표준의 적용 범위와 시기는 대통령령으로 정한다. 제4장 데이터 표준화">
+    <div class="card-top"><span class="num">제11조</span><span class="chapter">제4장 데이터 표준화</span></div>
+    <h2>데이터 표준</h2><div class="body"><p>행정안전부장관은 데이터 표준을 정하여 고시할 수 있다. 데이터 표준의 적용 범위와 시기는 대통령령으로 정한다.</p></div>
+  </article>
+<article class="card" data-search="제12조 표준 적용 의무 행정기관은 행정정보를 생산·관리·활용할 때 제11조에 따른 데이터 표준을 따라야 한다. 제4장 데이터 표준화">
+    <div class="card-top"><span class="num">제12조</span><span class="chapter">제4장 데이터 표준화</span></div>
+    <h2>표준 적용 의무</h2><div class="body"><p>행정기관은 행정정보를 생산·관리·활용할 때 제11조에 따른 데이터 표준을 따라야 한다.</p></div>
+  </article>
+<article class="card" data-search="제13조 실태조사 행정안전부장관은 매년 행정정보 통합관리 실태를 조사하여 그 결과를 공개한다. 제5장 감독·벌칙">
+    <div class="card-top"><span class="num">제13조</span><span class="chapter">제5장 감독·벌칙</span></div>
+    <h2>실태조사</h2><div class="body"><p>행정안전부장관은 매년 행정정보 통합관리 실태를 조사하여 그 결과를 공개한다.</p></div>
+  </article>
+<article class="card" data-search="제14조 과태료 다음 각 호의 어느 하나에 해당하는 자에게는 1천만원 이하의 과태료를 부과한다.
+1. 제8조를 위반하여 승인 없이 공동활용한 자
+2. 제12조에 따른 데이터 표준을 정당한 사유 없이 위반한 자 제5장 감독·벌칙">
+    <div class="card-top"><span class="num">제14조</span><span class="chapter">제5장 감독·벌칙</span></div>
+    <h2>과태료</h2><div class="body"><p>다음 각 호의 어느 하나에 해당하는 자에게는 1천만원 이하의 과태료를 부과한다.</p><p>1. 제8조를 위반하여 승인 없이 공동활용한 자</p><p>2. 제12조에 따른 데이터 표준을 정당한 사유 없이 위반한 자</p></div>
+  </article>
+<article class="card" data-search="제15조 시행일 이 법은 2026년 7월 1일부터 시행한다. 부칙">
+    <div class="card-top"><span class="num">제15조</span><span class="chapter">부칙</span></div>
+    <h2>시행일</h2><div class="body"><p>이 법은 2026년 7월 1일부터 시행한다.</p></div>
+  </article></section><div id="empty" class="empty">검색 결과가 없습니다.</div></main>
+<footer>시행일: 2026년 7월 1일 · 원문 데이터 기준</footer><script>
+const q=document.getElementById('q'), cards=[...document.querySelectorAll('.card')], count=document.getElementById('count'), empty=document.getElementById('empty');
+q.addEventListener('input',()=>{const s=q.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const show=c.dataset.search.toLowerCase().includes(s);c.hidden=!show;if(show)n++});count.textContent=n+'개 조항';empty.style.display=n?'none':'block'});
+</script></body></html>
